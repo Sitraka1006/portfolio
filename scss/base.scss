@@ -1,0 +1,31 @@
+html{
+    scroll-behavior: smooth;
+}
+body {
+    margin: auto;
+    margin: auto;
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.content {
+    margin-left: 15px;
+}
+.right {
+    margin-left: 300px;
+    margin-right: 60px;
+}
+.contenu {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    gap: 10px;
+    .image {
+        img {
+            width: 500px;
+            border-radius: 20px;
+        }
+    }
+}

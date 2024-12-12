@@ -1,0 +1,47 @@
+h1 {
+    color: $secondary-color;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 40px;
+}
+
+h2 {
+    color: $quaternary-color;
+    font-size: 30px;
+}
+p {
+    font-size: 17px;
+}
+.about, .experience, .hobbies, .competence {
+    p {
+        background-color: $tertiary-color;
+        padding: 20px;
+        border-radius: 10px;
+    }
+}
+.navbar {
+    ul li{
+        list-style-type: none;
+        font-size: 20px;
+        margin-top: 20px;
+        a {
+            text-decoration: none;
+            color: $secondary-color;
+            &:hover {
+                color: white;
+                font-family: 'Courier New', Courier, monospace;
+            }
+        }
+    }
+}
+.contenu {
+    .intro p {
+        align-items: center;
+        text-align: left;
+        margin-left: 20px;
+    }
+}
+h3 {
+    color: $finally-color;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
