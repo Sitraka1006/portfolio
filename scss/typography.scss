@@ -3,6 +3,16 @@ h1 {
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     font-size: 40px;
+    @include respond-to("desktop") {
+        font-size: 30px;
+    }
+    @include respond-to("tablette") {
+        font-size: 20px;
+    }
+    @include respond-to("mobile") {
+        font-size: 20px;
+    }
+
 }
 
 h2 {
@@ -10,13 +20,25 @@ h2 {
     font-size: 30px;
 }
 p {
-    font-size: 17px;
+    font-size: 20px;
+    @include respond-to("desktop") {
+        font-size: 20px;
+    }
+    @include respond-to("tablette") {
+        font-size: 17px;
+    }
+    @include respond-to("mobile") {
+        font-size: 15px;
+    }
 }
 .about, .experience, .hobbies, .competence {
     p {
-        background-color: $tertiary-color;
+        background-color: $secondary-color;
         padding: 20px;
         border-radius: 10px;
+        @include respond-to("mobile") {
+            text-align: center;
+        }
     }
 }
 .navbar {
@@ -45,3 +67,15 @@ h3 {
     color: $finally-color;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.social-links {
+    a {
+      color: $quaternary-color;
+      font-size: 20px;
+      transition: transform 0.3s ease;
+  
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }

@@ -1,0 +1,12 @@
+.capacite {
+    width: 60%;
+    @include respond-to("desktop") {
+        width: 100%;
+    }
+    @include respond-to("tablette") {
+        width: 100%;
+    }
+    @include respond-to("mobile") {
+        width: 100%;
+    }
+}

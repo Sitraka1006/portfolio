@@ -4,6 +4,21 @@ h1 {
   text-align: center;
   font-size: 40px;
 }
+@media (max-width: 992px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 576px) {
+  h1 {
+    font-size: 20px;
+  }
+}
 
 h2 {
   color: #417FA6;
@@ -11,13 +26,33 @@ h2 {
 }
 
 p {
-  font-size: 17px;
+  font-size: 20px;
+}
+@media (max-width: 992px) {
+  p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  p {
+    font-size: 17px;
+  }
+}
+@media (max-width: 576px) {
+  p {
+    font-size: 15px;
+  }
 }
 
 .about p, .experience p, .hobbies p, .competence p {
-  background-color: #D5E5F2;
+  background-color: #8FA9BF;
   padding: 20px;
   border-radius: 10px;
+}
+@media (max-width: 576px) {
+  .about p, .experience p, .hobbies p, .competence p {
+    text-align: center;
+  }
 }
 
 .navbar ul li {
@@ -45,6 +80,15 @@ h3 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.social-links a {
+  color: #417FA6;
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+.social-links a:hover {
+  transform: scale(1.2);
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -52,12 +96,8 @@ html {
 body {
   margin: auto;
   margin: auto;
-}
-
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
+  background-color: rgb(221, 221, 242);
+  max-width: 100%;
 }
 
 .content {
@@ -68,16 +108,200 @@ nav {
   margin-left: 300px;
   margin-right: 60px;
 }
+@media (max-width: 992px) {
+  .right {
+    margin-left: 260px;
+    margin-right: 10px;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .right {
+    margin-left: 260px;
+    margin-right: 10px;
+    text-align: center;
+  }
+}
+@media (max-width: 576px) {
+  .right {
+    margin-left: 210px;
+    margin-right: 3px;
+    text-align: center;
+  }
+}
 
 .contenu {
   display: flex;
   flex-direction: row;
+  align-items: center;
   text-align: center;
   gap: 10px;
+}
+@media (max-width: 576px) {
+  .contenu {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .contenu {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 992px) {
+  .contenu {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .contenu .image img {
   width: 500px;
   border-radius: 20px;
+}
+@media (max-width: 992px) {
+  .contenu .image img {
+    width: 400px;
+    border-radius: 5px;
+  }
+}
+@media (max-width: 768px) {
+  .contenu .image img {
+    width: 300px;
+    border-radius: 5px;
+  }
+}
+@media (max-width: 576px) {
+  .contenu .image img {
+    width: 200px;
+    border-radius: 5px;
+  }
+}
+
+.progress-bar {
+  background: #ddd;
+  width: 100%;
+  margin: 10px 0;
+}
+.progress-bar div {
+  background: #8FA9BF;
+  height: 20px;
+  text-align: center;
+  color: black;
+}
+
+.social-links {
+  list-style: none;
+  gap: 20px;
+}
+
+footer {
+  clear: both;
+}
+
+.about, .experience, .hobbies {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.about .photo, .experience .photo, .hobbies .photo {
+  padding-top: 80px;
+  margin-left: 5px;
+  width: 45%;
+}
+@media (max-width: 992px) {
+  .about .photo, .experience .photo, .hobbies .photo {
+    width: 1%;
+    margin: 0;
+    padding: 0;
+  }
+}
+@media (max-width: 768px) {
+  .about .photo, .experience .photo, .hobbies .photo {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
+@media (max-width: 576px) {
+  .about .photo, .experience .photo, .hobbies .photo {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
+.about .photo img, .experience .photo img, .hobbies .photo img {
+  width: 45%;
+  width: 300px;
+  height: 200px;
+  border-radius: 20px;
+}
+@media (max-width: 576px) {
+  .about .photo img, .experience .photo img, .hobbies .photo img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+.about .ecris, .experience .ecris, .hobbies .ecris {
+  width: 50%;
+}
+@media (max-width: 992px) {
+  .about .ecris, .experience .ecris, .hobbies .ecris {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .about .ecris, .experience .ecris, .hobbies .ecris {
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .about .ecris, .experience .ecris, .hobbies .ecris {
+    width: 100%;
+  }
+}
+
+.ligne {
+  border: 2px solid #417FA6;
+  height: 150px;
+  margin-top: 10px;
+}
+@media (max-width: 992px) {
+  .ligne {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .ligne {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .ligne {
+    display: none;
+  }
+}
+
+.element-button {
+  margin-top: 2rem;
+  text-align: center;
+}
+.element-button a {
+  text-decoration: none;
+}
+.element-button a button {
+  padding: 20px;
+  font-size: 17px;
+  background-color: #384A59;
+  color: white;
+  border-radius: 20px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .navbar {
@@ -94,6 +318,84 @@ nav {
   padding: 20px;
   border-radius: 50%;
   margin: auto;
+}
+@media (max-width: 576px) {
+  .navbar img {
+    width: 167px;
+    margin: auto;
+  }
+}
+@media (max-width: 576px) {
+  .navbar {
+    width: 200px;
+  }
+}
+
+.competence {
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 992px) {
+  .competence {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .competence {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 576px) {
+  .competence {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.competence .one, .competence .two, .competence .three {
+  width: 33%;
+}
+@media (max-width: 992px) {
+  .competence .one, .competence .two, .competence .three {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .competence .one, .competence .two, .competence .three {
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .competence .one, .competence .two, .competence .three {
+    width: 100%;
+  }
+}
+.competence .two {
+  align-items: center;
+  margin: 0 15px;
+}
+
+.capacite {
+  width: 60%;
+}
+@media (max-width: 992px) {
+  .capacite {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .capacite {
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .capacite {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,35 @@
+.competence {
+    display: flex;
+    flex-direction: row;
+    @include respond-to("desktop") {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    @include respond-to("tablette") {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    @include respond-to("mobile") {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .one, .two, .three {
+        width: 33%;
+        @include respond-to("desktop") {
+            width: 100%;
+        }
+        @include respond-to("tablette") {
+            width: 100%;
+        }
+        @include respond-to("mobile") {
+            width: 100%;
+        }
+    }
+    .two {
+        align-items: center;
+        margin: 0 15px;
+    }
+}

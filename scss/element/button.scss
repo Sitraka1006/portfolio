@@ -1,0 +1,14 @@
+.element-button {
+    margin-top: 2rem;
+    text-align: center;
+    a {
+        text-decoration: none;
+        button {
+            padding: 20px;
+            font-size: 17px;
+            background-color: $primary-color;
+            color: white;
+            border-radius: 20px;
+        }
+    }
+}
