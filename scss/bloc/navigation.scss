@@ -1,16 +1,36 @@
 nav {
     position: fixed;
+    background-color: $primary-color;
     top: 0;
     left: 0;
 }
 
 .navbar {
-    width: 233px;
-    background-color: $primary-color;
+    width: 100%;
     height: 300vh;
+    @include respond-to("mobile") {
+            display: flex;
+            flex-direction: row;
+            height: 100px;
+            width: 576px;
+            ul{
+                background-color: $primary-color;
+                width: 576px;
+                margin-top: 0;
+                height: 80px;
+                padding-top: 20px;
+                padding-right: 150px;
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+            }
+    }
     .line {
         border: 2px solid $quaternary-color;
         margin: 15px 40px;
+        @include respond-to("mobile") {
+            display: none;
+        }
     }
     img {
         width: 200px;
@@ -18,8 +38,9 @@ nav {
         border-radius: 50%;
         margin: auto;
         @include respond-to("mobile") {
-            width: 167px;
-            margin: auto;
+            width: 75px;
+            padding: 10px;
+            
         }
     }
     @include respond-to("mobile") {

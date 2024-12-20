@@ -24,9 +24,10 @@ body {
         text-align: center;
     }
     @include respond-to("mobile"){
-        margin-left: 210px;
-        margin-right: 3px;
-        text-align: center;
+        margin-top: 120px;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 90%;
     }
    
    
@@ -117,6 +118,9 @@ body {
             width: 300px;
             height: 200px;
             border-radius: 20px;
+            @include respond-to("desktop") {
+                display: none;
+            }
             @include respond-to("mobile") {
                 max-width: 100%;
                 height: auto;

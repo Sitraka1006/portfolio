@@ -4,7 +4,7 @@ h1 {
   text-align: center;
   font-size: 40px;
 }
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   h1 {
     font-size: 30px;
   }
@@ -28,7 +28,7 @@ h2 {
 p {
   font-size: 20px;
 }
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   p {
     font-size: 20px;
   }
@@ -59,6 +59,13 @@ p {
   list-style-type: none;
   font-size: 20px;
   margin-top: 20px;
+}
+@media (max-width: 576px) {
+  .navbar ul li {
+    font-size: 13px;
+    margin-top: 20px;
+    margin-right: 3px;
+  }
 }
 .navbar ul li a {
   text-decoration: none;
@@ -108,7 +115,7 @@ body {
   margin-left: 300px;
   margin-right: 60px;
 }
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   .right {
     margin-left: 260px;
     margin-right: 10px;
@@ -124,9 +131,10 @@ body {
 }
 @media (max-width: 576px) {
   .right {
-    margin-left: 210px;
-    margin-right: 3px;
-    text-align: center;
+    margin-top: 120px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 90%;
   }
 }
 
@@ -149,7 +157,7 @@ body {
     flex-direction: column;
   }
 }
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   .contenu {
     display: flex;
     flex-direction: column;
@@ -159,7 +167,7 @@ body {
   width: 500px;
   border-radius: 20px;
 }
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   .contenu .image img {
     width: 400px;
     border-radius: 5px;
@@ -210,7 +218,7 @@ footer {
   margin-left: 5px;
   width: 45%;
 }
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   .about .photo, .experience .photo, .hobbies .photo {
     width: 1%;
     margin: 0;
@@ -237,6 +245,11 @@ footer {
   height: 200px;
   border-radius: 20px;
 }
+@media (max-width: 1024px) {
+  .about .photo img, .experience .photo img, .hobbies .photo img {
+    display: none;
+  }
+}
 @media (max-width: 576px) {
   .about .photo img, .experience .photo img, .hobbies .photo img {
     max-width: 100%;
@@ -246,7 +259,7 @@ footer {
 .about .ecris, .experience .ecris, .hobbies .ecris {
   width: 50%;
 }
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   .about .ecris, .experience .ecris, .hobbies .ecris {
     width: 100%;
   }
@@ -267,7 +280,7 @@ footer {
   height: 150px;
   margin-top: 10px;
 }
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   .ligne {
     display: none;
   }
@@ -300,18 +313,42 @@ footer {
 
 nav {
   position: fixed;
+  background-color: #384A59;
   top: 0;
   left: 0;
 }
 
 .navbar {
-  width: 233px;
-  background-color: #384A59;
-  height: 100vh;
+  width: 100%;
+  height: 300vh;
+}
+@media (max-width: 576px) {
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    width: 576px;
+  }
+  .navbar ul {
+    background-color: #384A59;
+    width: 576px;
+    margin-top: 0;
+    height: 80px;
+    padding-top: 20px;
+    padding-right: 150px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
 }
 .navbar .line {
   border: 2px solid #417FA6;
   margin: 15px 40px;
+}
+@media (max-width: 576px) {
+  .navbar .line {
+    display: none;
+  }
 }
 .navbar img {
   width: 200px;
@@ -321,8 +358,8 @@ nav {
 }
 @media (max-width: 576px) {
   .navbar img {
-    width: 167px;
-    margin: auto;
+    width: 75px;
+    padding: 10px;
   }
 }
 @media (max-width: 576px) {
@@ -335,7 +372,7 @@ nav {
   display: flex;
   flex-direction: row;
 }
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   .competence {
     width: 100%;
     display: flex;
@@ -359,7 +396,7 @@ nav {
 .competence .one, .competence .two, .competence .three {
   width: 33%;
 }
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   .competence .one, .competence .two, .competence .three {
     width: 100%;
   }
@@ -382,7 +419,7 @@ nav {
 .capacite {
   width: 60%;
 }
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   .capacite {
     width: 100%;
   }
