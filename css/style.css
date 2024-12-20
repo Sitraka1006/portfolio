@@ -132,7 +132,7 @@ body {
 @media (max-width: 576px) {
   .right {
     margin-top: 120px;
-    margin: auto;
+    margin-left: 10px;
     width: 90%;
   }
 }
@@ -234,6 +234,7 @@ footer {
 @media (max-width: 576px) {
   .about .photo, .experience .photo, .hobbies .photo {
     width: 100%;
+    text-align: center;
     margin: 0;
     padding: 0;
   }
